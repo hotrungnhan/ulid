@@ -900,3 +900,15 @@ func BenchmarkCompare(b *testing.B) {
 		_ = id.Compare(other)
 	}
 }
+
+func BenchmarkULIDValue_SqlValue(b *testing.B) {
+	// ulid.SQL_MARSHAL_CONFIG = true
+	id := ulid.MustNewDefault(time.Now())
+
+	for i := 0; i < b.N; i++ {
+		_, err := id.Value()
+		if err != nil {
+			b.Fatalf("MarshalBinary Value() failed: %v", err)
+		}
+	}
+}

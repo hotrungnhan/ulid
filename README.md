@@ -1,5 +1,7 @@
 # Universally Unique Lexicographically Sortable Identifier
 
+## a Fork version with pgx/ulid Supported
+
 [![Project status](https://img.shields.io/github/release/oklog/ulid.svg?style=flat-square)](https://github.com/oklog/ulid/releases/latest)
 ![Build Status](https://github.com/oklog/ulid/actions/workflows/test.yml/badge.svg)
 [![Go Report Card](https://goreportcard.com/badge/oklog/ulid?cache=0)](https://goreportcard.com/report/oklog/ulid)
@@ -34,7 +36,7 @@ A ULID however:
 This package requires Go modules.
 
 ```shell
-go get github.com/oklog/ulid/v2
+go get github.com/hotrungnhan/ulid/v2
 ```
 
 ## Usage
